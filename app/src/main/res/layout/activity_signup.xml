@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <!-- Middle Layout containing the username, password, and sign-up elements -->
+    <RelativeLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:background="@drawable/middle_bg">
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/text"/>
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/text"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

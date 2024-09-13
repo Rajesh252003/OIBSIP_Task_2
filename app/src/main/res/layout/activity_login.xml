@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <!-- Middle Layout to hold the username, password, login, and signup fields -->
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/middle_bg"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@id/middleLayout"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/middleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:background="@drawable/middle_bg">
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text"
+            android:hint="Username"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/text"
+            android:layout_below="@id/usernameEditText"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@id/passwordEditText"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/loginButton"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"/>
+    </RelativeLayout>
+
+</RelativeLayout>
